@@ -444,7 +444,7 @@ const Blog = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Expert{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-green-600">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-green-600">
                 Insights
               </span>
             </h2>
@@ -523,7 +523,7 @@ const Blog = () => {
           </div>
 
           {/* Newsletter Signup */}
-          <div className="mt-16 bg-gradient-to-r from-blue-600 to-green-600 p-8 rounded-2xl text-white">
+          <div className="mt-16 bg-gradient-to-r from-orange-400 to-green-600 p-8 rounded-2xl text-white">
             <div className="text-center">
               <h3 className="text-2xl font-bold mb-4">Stay Updated with NRI Insights</h3>
               <p className="text-blue-100 mb-6">
@@ -617,7 +617,7 @@ const Blog = () => {
                     closePost();
                     document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
                   }}
-                  className="bg-gradient-to-r from-blue-600 to-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-green-700 transition-all duration-300 flex items-center gap-2"
+                  className="bg-gradient-to-r from-orange-400 to-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-green-700 transition-all duration-300 flex items-center gap-2"
                 >
                   Book Consultation
                   <ArrowRight className="w-4 h-4" />

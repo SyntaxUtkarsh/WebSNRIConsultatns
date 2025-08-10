@@ -71,7 +71,7 @@ const Team = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Meet Our{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-green-600">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-green-600">
               Expert Team
             </span>
           </h2>
@@ -111,7 +111,9 @@ const Team = () => {
                 </div>
                 <div className="space-y-1">
                   <p className="text-xs text-gray-600 font-medium">{member.credentials}</p>
-                  <p className="text-xs text-gray-500 leading-relaxed line-clamp-2">{member.specialization}</p>
+                  <p className="text-xs text-gray-500 leading-relaxed line-clamp-2">
+                    {member.specialization}
+                  </p>
                 </div>
               </div>
             </div>
@@ -124,23 +126,25 @@ const Team = () => {
             <div className="bg-white rounded-2xl shadow-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto">
               <div className="sticky top-0 bg-white p-6 border-b border-gray-200 rounded-t-2xl flex items-center justify-between">
                 <h3 className="text-2xl font-bold text-gray-900">{selectedMember.name}</h3>
-                <button 
+                <button
                   onClick={closeMemberModal}
                   className="w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center transition-colors"
                 >
                   <X className="w-5 h-5 text-gray-600" />
                 </button>
               </div>
-              
+
               <div className="p-6">
                 <div className="flex flex-col md:flex-row gap-6 mb-6">
-                  <img 
-                    src={selectedMember.image} 
+                  <img
+                    src={selectedMember.image}
                     alt={selectedMember.name}
                     className="w-full md:w-48 h-64 object-cover rounded-xl"
                   />
                   <div className="flex-1">
-                    <p className="text-blue-600 font-semibold text-lg mb-2">{selectedMember.position}</p>
+                    <p className="text-blue-600 font-semibold text-lg mb-2">
+                      {selectedMember.position}
+                    </p>
                     <div className="space-y-3">
                       <div>
                         <h4 className="font-semibold text-gray-900 mb-1">Experience</h4>
@@ -157,7 +161,7 @@ const Team = () => {
                     </div>
                   </div>
                 </div>
-                
+
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-3">Professional Overview</h4>
                   <p className="text-gray-600 leading-relaxed">{selectedMember.description}</p>
