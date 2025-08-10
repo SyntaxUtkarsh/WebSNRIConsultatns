@@ -252,7 +252,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">Phone Support</h4>
-                  <p className="text-gray-600">+91 98765 43210</p>
+                  <p className="text-gray-600">+91 9899499399</p>
                   <p className="text-gray-600">Toll Free: 1800-123-4567</p>
                 </div>
               </div>
@@ -274,7 +274,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">WhatsApp</h4>
-                  <p className="text-gray-600">+91 98765 43210</p>
+                  <p className="text-gray-600">+91 9899499399</p>
                   <button className="text-green-600 font-semibold hover:text-green-700 transition-colors">
                     Chat with us →
                   </button>
