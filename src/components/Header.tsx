@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Menu, X, Phone, Mail } from 'lucide-react';
+import React, { useState } from "react";
+import { Menu, X, Phone, Mail } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -7,7 +7,7 @@ const Header = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
       setIsMenuOpen(false);
     }
   };
@@ -26,32 +26,32 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
-            <button 
-              onClick={() => scrollToSection('home')}
+            <button
+              onClick={() => scrollToSection("home")}
               className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
             >
               Home
             </button>
-            <button 
-              onClick={() => scrollToSection('services')}
+            <button
+              onClick={() => scrollToSection("services")}
               className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
             >
               Services
             </button>
-            <button 
-              onClick={() => scrollToSection('team')}
+            <button
+              onClick={() => scrollToSection("team")}
               className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
             >
               Our Team
             </button>
-            <button 
-              onClick={() => scrollToSection('blog')}
+            <button
+              onClick={() => scrollToSection("blog")}
               className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
             >
               Blog
             </button>
-            <button 
-              onClick={() => scrollToSection('contact')}
+            <button
+              onClick={() => scrollToSection("contact")}
               className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
             >
               Contact
@@ -62,7 +62,7 @@ const Header = () => {
           <div className="hidden xl:flex items-center space-x-4">
             <div className="flex items-center text-sm text-gray-600">
               <Phone className="w-4 h-4 mr-2" />
-              <span>+91 98765 43210</span>
+              <span>+91 9899499399</span>
             </div>
             <div className="flex items-center text-sm text-gray-600">
               <Mail className="w-4 h-4 mr-2" />
@@ -83,32 +83,32 @@ const Header = () => {
         {isMenuOpen && (
           <div className="lg:hidden py-4 border-t border-gray-200">
             <nav className="flex flex-col space-y-4">
-              <button 
-                onClick={() => scrollToSection('home')}
+              <button
+                onClick={() => scrollToSection("home")}
                 className="text-left text-gray-700 hover:text-blue-600 font-medium transition-colors"
               >
                 Home
               </button>
-              <button 
-                onClick={() => scrollToSection('services')}
+              <button
+                onClick={() => scrollToSection("services")}
                 className="text-left text-gray-700 hover:text-blue-600 font-medium transition-colors"
               >
                 Services
               </button>
-              <button 
-                onClick={() => scrollToSection('team')}
+              <button
+                onClick={() => scrollToSection("team")}
                 className="text-left text-gray-700 hover:text-blue-600 font-medium transition-colors"
               >
                 Our Team
               </button>
-              <button 
-                onClick={() => scrollToSection('blog')}
+              <button
+                onClick={() => scrollToSection("blog")}
                 className="text-left text-gray-700 hover:text-blue-600 font-medium transition-colors"
               >
                 Blog
               </button>
-              <button 
-                onClick={() => scrollToSection('contact')}
+              <button
+                onClick={() => scrollToSection("contact")}
                 className="text-left text-gray-700 hover:text-blue-600 font-medium transition-colors"
               >
                 Contact
@@ -117,7 +117,7 @@ const Header = () => {
                 <div className="flex flex-col space-y-2 text-sm text-gray-600">
                   <div className="flex items-center">
                     <Phone className="w-4 h-4 mr-2" />
-                    <span>+91 98765 43210</span>
+                    <span>+91 9899499399</span>
                   </div>
                   <div className="flex items-center">
                     <Mail className="w-4 h-4 mr-2" />
