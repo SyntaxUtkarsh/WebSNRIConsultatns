@@ -26,12 +26,12 @@ const Hero = () => {
                 Trusted Consultation for
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-green-600">
                   {" "}
-                  NRIs
+                  NRIs / OCIs
                 </span>
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed">
                 Life becomes much easier and harmonious when a correct and timely advice is received
-                from trustworthy friends or professionals. We one-stop solution for all your
+                from trustworthy friends or professionals. We are one-stop solution for all your
                 India-based investments and transactions. Financial consulting, due diligence,
                 investment advisory, and real estate services.
               </p>
