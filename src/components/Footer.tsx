@@ -17,7 +17,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-6">
             <div className="flex items-center">
-              <div className="bg-gradient-to-r from-blue-600 to-green-600 text-white px-3 py-2 rounded-lg font-bold text-xl">
+              <div className="bg-gradient-to-r from-orange-400 to-green-600 text-white px-3 py-2 rounded-lg font-bold text-xl">
                 NRI
               </div>
               <span className="ml-2 text-xl font-bold">Consultants</span>

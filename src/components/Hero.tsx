@@ -24,7 +24,7 @@ const Hero = () => {
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                 Trusted Consultation for
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-green-600">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-green-600">
                   {" "}
                   NRIs / OCIs
                 </span>
@@ -40,15 +40,15 @@ const Hero = () => {
             {/* Stats */}
             <div className="flex flex-wrap gap-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600">270+</div>
+                <div className="text-3xl font-bold text-orange-400">270+</div>
                 <div className="text-sm text-gray-600">Happy Clients</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-green-600">9 Million USD</div>
-                <div className="text-sm text-gray-600">Transactions Handled</div>
+                <div className="text-3xl font-bold text-blue-600">9.27 Million USD</div>
+                <div className="text-sm text-gray-600">Transactions Managed</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-orange-600">21+</div>
+                <div className="text-3xl font-bold text-green-600">21+</div>
                 <div className="text-sm text-gray-600">Years Experience</div>
               </div>
             </div>
@@ -57,7 +57,7 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <button
                 onClick={() => scrollToSection("contact")}
-                className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 rounded-full font-semibold flex items-center justify-center gap-2 hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                className="bg-gradient-to-r from-orange-400 to-green-700 text-white px-8 py-4 rounded-full font-semibold flex items-center justify-center gap-2 hover:from-orange-600 hover:to-green-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
               >
                 Book a Free Consultation
                 <ArrowRight className="w-5 h-5" />

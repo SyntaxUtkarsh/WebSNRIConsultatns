@@ -13,16 +13,16 @@ const Header = () => {
   };
 
   const navigateToServices = () => {
-    window.location.href = '/services';
+    window.location.href = "/services";
     setIsMenuOpen(false);
   };
 
   const handleConsultNow = () => {
     // If we're on the services page, navigate back to home first
-    if (window.location.pathname === '/services') {
-      window.location.href = '/#contact';
+    if (window.location.pathname === "/services") {
+      window.location.href = "/#contact";
     } else {
-      scrollToSection('contact');
+      scrollToSection("contact");
     }
     setIsMenuOpen(false);
   };
@@ -33,7 +33,7 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="bg-gradient-to-r from-blue-600 to-green-600 text-white px-3 py-2 rounded-lg font-bold text-xl">
+            <div className="bg-gradient-to-b from-orange-400 to-green-600 text-white px-3 py-2 rounded-lg font-bold text-xl">
               NRI
             </div>
             <span className="ml-2 text-xl font-bold text-gray-800">Consultants</span>
@@ -54,7 +54,7 @@ const Header = () => {
               Services
             </button> */}
             <button
-              onClick={() => window.location.href = '/services'}
+              onClick={() => (window.location.href = "/services")}
               className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
             >
               Services
@@ -83,7 +83,7 @@ const Header = () => {
           <div className="hidden lg:flex items-center">
             <button
               onClick={handleConsultNow}
-              className="bg-gradient-to-r from-blue-600 to-green-600 text-white px-6 py-3 rounded-full font-semibold hover:from-blue-700 hover:to-green-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+              className="bg-gradient-to-r from-orange-400 to-green-600 text-white px-6 py-3 rounded-full font-semibold hover:from-blue-700 hover:to-green-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
               Consult Now
             </button>
@@ -115,7 +115,7 @@ const Header = () => {
                 Services
               </button>
               <button
-                onClick={() => window.location.href = '/services'}
+                onClick={() => (window.location.href = "/services")}
                 className="text-left text-gray-700 hover:text-blue-600 font-medium transition-colors"
               >
                 Detailed Services
@@ -141,7 +141,7 @@ const Header = () => {
               <div className="pt-4 border-t border-gray-200">
                 <button
                   onClick={handleConsultNow}
-                  className="w-full bg-gradient-to-r from-blue-600 to-green-600 text-white px-6 py-3 rounded-full font-semibold hover:from-blue-700 hover:to-green-700 transition-all duration-300"
+                  className="w-full bg-gradient-to-r from-orange-400 to-green-600 text-white px-6 py-3 rounded-full font-semibold hover:from-blue-700 hover:to-green-700 transition-all duration-300"
                 >
                   Consult Now
                 </button>

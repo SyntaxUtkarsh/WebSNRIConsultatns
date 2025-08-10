@@ -39,7 +39,7 @@ const WhyChooseUs = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Why Choose{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-green-600">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-green-600">
               NRIConsultants
             </span>
           </h2>
