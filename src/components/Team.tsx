@@ -1,5 +1,5 @@
 import React from "react";
-import { LinkedinIcon, Mail, Phone } from "lucide-react";
+// import { LinkedinIcon, Mail, Phone } from "lucide-react";
 
 const Team = () => {
   const teamMembers = [
@@ -8,7 +8,7 @@ const Team = () => {
       position: "Principal Consultant",
       experience: "Professional Practice: 21 Years",
       specialization: "Litigation Arbitration & Supreme Court Practices",
-      image: "/public/assets/rrPathak.jpg", // Replace with actual image path or URL
+      image: "/assets/rrPathak.jpg", // Replace with actual image path or URL
       credentials: "M.A. (JNU), LLB (DU)",
       description:
         "R. R. Pathak is a Supreme Court attorney with 35+ years of experience in education management and legal practice. An alumnus of JNU, DU, BHU, and other prestigious institutions, he also leads VSERV FOR RIGHTS and the SUN CAD Foundation, offering legal aid and social support. He is a passionate advocate for justice and regularly engages in national and international legal forums.",
@@ -18,7 +18,7 @@ const Team = () => {
       position: "Senior Consultant",
       experience: "Professional Practice: 19 Years",
       specialization: "Direct and Indirect Taxes & Transaction Due Diligence",
-      image: "/public/assets/charu.jpg",
+      image: "/assets/charu.jpg",
       credentials: "Taxation, GST, Due Diligence",
       description:
         "Charu Paliwal is a founding partner of the firm with 18 years of experience in Income Tax, GST, and Company Law matters. A Fellow Chartered Accountant, she specializes in business setup, regulatory compliance, and startup advisory. She also handles FDI matters, due diligence, and commercial litigation.",
@@ -28,7 +28,7 @@ const Team = () => {
       position: "Senior Consultant",
       experience: "Professional Practice: 11 Years",
       specialization: "Investements, Valuation & Financial Markets Analysis",
-      image: "/public/assets/nischintPaliwal.jpg",
+      image: "/assets/nischintPaliwal.jpg",
       credentials: "LLB, MBA",
       description:
         "Nishchint Paliwal is an investment banking professional with 25+ years of experience in corporate finance, asset management for NRIs, and startup advisory. He has led high-value transactions, fund-raising, and FDI structuring, and has held senior roles at top Indian banks. He brings a blend of global best practices and deep market insight.",
@@ -38,7 +38,7 @@ const Team = () => {
       position: "Senior Associate",
       experience: "Professional Practice: 15 Years",
       specialization: "Real Estate & Liaisoning",
-      image: "/public/assets/amresh.jpeg", // Replace with actual image path or URL
+      image: "/assets/amresh.jpeg", // Replace with actual image path or URL
       credentials: "M.A, MBA",
       description:
         "Expert in cross-industry expertise from startups, government, manufacturing, and global IT, excelling in operations, cost optimization, and quality management. Skilled in HR, finance, and strategic partnerships, I streamline processes, mitigate risks, and guide emerging enterprises in building robust, future-ready foundations.",
@@ -48,7 +48,7 @@ const Team = () => {
       position: "Legal Consultant",
       experience: "Professional Practice: 3 Years",
       specialization: "Documentation, Title Search & Certifications",
-      image: "/public/assets/vedant.jpg",
+      image: "/assets/vedant.jpg",
       credentials: "LLB, MBA",
       description:
         "Legal consultant with LL.B and 3 years’ experience in legal compliances, specializing in property title searches. MBA Finance graduate skilled in analyzing financial and legal aspects to ensure clear property titles and regulatory adherence. Committed to delivering accurate due diligence and risk mitigation for seamless real estate and business transactions.",
