@@ -1,5 +1,5 @@
 import React from "react";
-import { Mail, Phone, MapPin, Linkedin, Youtube, Instagram, ArrowRight } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 const Footer = () => {
   const scrollToSection = (sectionId: string) => {
@@ -12,8 +12,8 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white">
       {/* Main Footer Content */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
+      <div className="container mx-auto px-6 sm:px-6 lg:px-8 py-16">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
           {/* Company Info */}
           <div className="space-y-6">
             <div className="flex items-center">
@@ -24,7 +24,7 @@ const Footer = () => {
             </div>
             <p className="text-gray-300 leading-relaxed">
               Your trusted partner for NRI financial services, investment advisory, and property
-              transactions in India. Expert guidance for 15+ years.
+              transactions in India. Expert guidance for 21+ years.
             </p>
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-gray-300">
@@ -37,7 +37,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3 text-gray-300">
                 <MapPin className="w-4 h-4 text-blue-400" />
-                <span>Business District, Gurgaon, India</span>
+                <span>616, Sector 16, Faridabad-121001, India</span>
               </div>
             </div>
           </div>
@@ -84,101 +84,33 @@ const Footer = () => {
             <h3 className="text-lg font-bold mb-6">Our Services</h3>
             <div className="space-y-3">
               <div className="text-gray-300 hover:text-white transition-colors cursor-pointer">
-                Financial Consulting
+                Cross Border Transactions
               </div>
               <div className="text-gray-300 hover:text-white transition-colors cursor-pointer">
-                Due Diligence
+                Taxation
               </div>
               <div className="text-gray-300 hover:text-white transition-colors cursor-pointer">
-                Investment Advisory
+                Investments
               </div>
               <div className="text-gray-300 hover:text-white transition-colors cursor-pointer">
-                Real Estate Transactions
-              </div>
-              <div className="text-gray-300 hover:text-white transition-colors cursor-pointer">
-                Tax Planning
+                Property / Real Estate Matters
               </div>
             </div>
-          </div>
-
-          {/* Newsletter */}
-          <div>
-            <h3 className="text-lg font-bold mb-6">Stay Updated</h3>
-            <p className="text-gray-300 mb-4">
-              Subscribe to our newsletter for the latest NRI financial insights and updates.
-            </p>
-            <div className="space-y-3">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white placeholder-gray-400"
-              />
-              <button className="w-full bg-gradient-to-r from-blue-600 to-green-600 text-white py-3 px-4 rounded-lg font-semibold hover:from-blue-700 hover:to-green-700 transition-all duration-300 flex items-center justify-center gap-2">
-                Subscribe
-                <ArrowRight className="w-4 h-4" />
-              </button>
-            </div>
-
-            {/* Social Media */}
-            {/* <div className="mt-6">
-              <h4 className="text-sm font-semibold mb-3">Follow Us</h4>
-              <div className="flex gap-3">
-                <div className="w-10 h-10 bg-gray-800 hover:bg-blue-600 rounded-lg flex items-center justify-center cursor-pointer transition-colors">
-                  <Linkedin className="w-5 h-5" />
-                </div>
-                <div className="w-10 h-10 bg-gray-800 hover:bg-red-600 rounded-lg flex items-center justify-center cursor-pointer transition-colors">
-                  <Youtube className="w-5 h-5" />
-                </div>
-                <div className="w-10 h-10 bg-gray-800 hover:bg-pink-600 rounded-lg flex items-center justify-center cursor-pointer transition-colors">
-                  <Instagram className="w-5 h-5" />
-                </div>
-              </div>
-            </div> */}
           </div>
         </div>
       </div>
-
-      {/* Trust Indicators */}
-      {/* <div className="border-t border-gray-800">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            <div>
-              <div className="text-2xl font-bold text-blue-400 mb-1">5000+</div>
-              <div className="text-sm text-gray-400">Satisfied Clients</div>
-            </div>
-            <div>
-              <div className="text-2xl font-bold text-green-400 mb-1">₹500Cr+</div>
-              <div className="text-sm text-gray-400">Transactions</div>
-            </div>
-            <div>
-              <div className="text-2xl font-bold text-orange-400 mb-1">15+</div>
-              <div className="text-sm text-gray-400">Years Experience</div>
-            </div>
-            <div>
-              <div className="text-2xl font-bold text-purple-400 mb-1">50+</div>
-              <div className="text-sm text-gray-400">Countries Served</div>
-            </div>
-          </div>
-        </div>
-      </div> */}
 
       {/* Bottom Footer */}
       <div className="border-t border-gray-800">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="text-gray-400 text-sm">© 2025 NRIConsultants. All rights reserved.</div>
+            <div className="text-gray-400 text-sm">© NRIConsultants. All rights reserved.</div>
             <div className="flex gap-6 text-sm text-gray-400">
               <a href="#" className="hover:text-white transition-colors">
                 Privacy Policy
               </a>
               <a href="#" className="hover:text-white transition-colors">
                 Terms of Service
-              </a>
-              <a href="#" className="hover:text-white transition-colors">
-                Cookie Policy
-              </a>
-              <a href="#" className="hover:text-white transition-colors">
-                Disclaimer
               </a>
             </div>
           </div>
