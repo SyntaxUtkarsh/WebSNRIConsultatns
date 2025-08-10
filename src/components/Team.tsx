@@ -1,53 +1,58 @@
-import React from 'react';
-import { LinkedinIcon, Mail, Phone } from 'lucide-react';
+import React from "react";
+import { LinkedinIcon, Mail, Phone } from "lucide-react";
 
 const Team = () => {
   const teamMembers = [
     {
-      name: "Rajesh Sharma",
-      position: "Managing Partner & Tax Specialist",
-      experience: "18 Years",
-      specialization: "NRI Taxation & FEMA Compliance",
-      image: "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=300&h=400&dpr=1",
-      credentials: "CA, CPA, LLM in Taxation",
-      description: "Expert in NRI taxation laws with extensive experience in cross-border financial planning and compliance."
+      name: "RR Pathak",
+      position: "Principal Consultant",
+      experience: "Professional Practice: 21 Years",
+      specialization: "Litigation Arbitration & Supreme Court Practices",
+      image: "/public/assets/rrPathak.jpg", // Replace with actual image path or URL
+      credentials: "M.A. (JNU), LLB (DU)",
+      description:
+        "R. R. Pathak is a Supreme Court attorney with 35+ years of experience in education management and legal practice. An alumnus of JNU, DU, BHU, and other prestigious institutions, he also leads VSERV FOR RIGHTS and the SUN CAD Foundation, offering legal aid and social support. He is a passionate advocate for justice and regularly engages in national and international legal forums.",
     },
     {
-      name: "Priya Patel",
-      position: "Investment Advisory Partner",
-      experience: "15 Years",
-      specialization: "Portfolio Management & Investment Strategy",
-      image: "https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=300&h=400&dpr=1",
-      credentials: "CFA, MBA Finance",
-      description: "Specialized in creating high-return investment portfolios for NRIs with focus on risk management."
+      name: "Charu Paliwal",
+      position: "Senior Consultant",
+      experience: "Professional Practice: 19 Years",
+      specialization: "Direct and Indirect Taxes & Transaction Due Diligence",
+      image: "/public/assets/charu.jpg",
+      credentials: "Taxation, GST, Due Diligence",
+      description:
+        "Charu Paliwal is a founding partner of the firm with 18 years of experience in Income Tax, GST, and Company Law matters. A Fellow Chartered Accountant, she specializes in business setup, regulatory compliance, and startup advisory. She also handles FDI matters, due diligence, and commercial litigation.",
     },
     {
-      name: "Amit Kumar",
-      position: "Real Estate Transactions Head",
-      experience: "12 Years",
-      specialization: "Property Law & Real Estate Investment",
-      image: "https://images.pexels.com/photos/3778876/pexels-photo-3778876.jpeg?auto=compress&cs=tinysrgb&w=300&h=400&dpr=1",
-      credentials: "LLB Property Law, RERA Certified",
-      description: "Comprehensive expertise in NRI property transactions, from purchase to management."
+      name: "Nishchint Paliwal",
+      position: "Senior Consultant",
+      experience: "Professional Practice: 11 Years",
+      specialization: "Investements, Valuation & Financial Markets Analysis",
+      image: "/public/assets/nischintPaliwal.jpg",
+      credentials: "LLB, MBA",
+      description:
+        "Nishchint Paliwal is an investment banking professional with 25+ years of experience in corporate finance, asset management for NRIs, and startup advisory. He has led high-value transactions, fund-raising, and FDI structuring, and has held senior roles at top Indian banks. He brings a blend of global best practices and deep market insight.",
     },
     {
-      name: "Deepika Singh",
-      position: "Due Diligence Partner",
-      experience: "14 Years",
-      specialization: "Business Verification & Risk Assessment",
-      image: "https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg?auto=compress&cs=tinysrgb&w=300&h=400&dpr=1",
-      credentials: "CS, CISA, Fraud Examiner",
-      description: "Expert in business due diligence with focus on protecting NRI investments from fraudulent schemes."
+      name: "Amresh Saxena",
+      position: "Senior Associate",
+      experience: "Professional Practice: 15 Years",
+      specialization: "Real Estate & Liaisoning",
+      image: "/public/assets/amresh.jpeg", // Replace with actual image path or URL
+      credentials: "M.A, MBA",
+      description:
+        "Expert in cross-industry expertise from startups, government, manufacturing, and global IT, excelling in operations, cost optimization, and quality management. Skilled in HR, finance, and strategic partnerships, I streamline processes, mitigate risks, and guide emerging enterprises in building robust, future-ready foundations.",
     },
     {
-      name: "Suresh Reddy",
-      position: "Financial Planning Partner",
-      experience: "16 Years",
-      specialization: "Wealth Management & Remittances",
-      image: "https://images.pexels.com/photos/3777931/pexels-photo-3777931.jpeg?auto=compress&cs=tinysrgb&w=300&h=400&dpr=1",
-      credentials: "CFP, CA, FPSB Certified",
-      description: "Comprehensive financial planning for NRIs with expertise in cross-border wealth management."
-    }
+      name: "Vedant Adlakha",
+      position: "Legal Consultant",
+      experience: "Professional Practice: 3 Years",
+      specialization: "Documentation, Title Search & Certifications",
+      image: "/public/assets/vedant.jpg",
+      credentials: "LLB, MBA",
+      description:
+        "Legal consultant with LL.B and 3 years’ experience in legal compliances, specializing in property title searches. MBA Finance graduate skilled in analyzing financial and legal aspects to ensure clear property titles and regulatory adherence. Committed to delivering accurate due diligence and risk mitigation for seamless real estate and business transactions.",
+    },
   ];
 
   return (
@@ -55,39 +60,42 @@ const Team = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Meet Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-green-600">Expert Team</span>
+            Meet Our{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-green-600">
+              Expert Team
+            </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Our team of seasoned professionals brings decades of combined experience in NRI services, 
-            ensuring you receive expert guidance at every step of your financial journey.
+            Our team of seasoned professionals brings decades of combined experience in NRI
+            services, ensuring you receive expert guidance at every step of your financial journey.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
           {teamMembers.map((member, index) => (
-            <div 
+            <div
               key={index}
               className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-gray-100"
             >
               <div className="relative overflow-hidden">
-                <img 
-                  src={member.image} 
+                <img
+                  src={member.image}
                   alt={member.name}
                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                
+
                 {/* Social Links - appear on hover */}
-                <div className="absolute bottom-4 left-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                {/* <div className="absolute bottom-4 left-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="w-8 h-8 bg-white/90 rounded-full flex items-center justify-center cursor-pointer hover:bg-white transition-colors">
                     <LinkedinIcon className="w-4 h-4 text-blue-600" />
                   </div>
                   <div className="w-8 h-8 bg-white/90 rounded-full flex items-center justify-center cursor-pointer hover:bg-white transition-colors">
                     <Mail className="w-4 h-4 text-gray-600" />
                   </div>
-                </div>
+                </div> */}
               </div>
-              
+
               <div className="p-6">
                 <div className="mb-4">
                   <h3 className="text-lg font-bold text-gray-900 mb-1">{member.name}</h3>
@@ -99,32 +107,46 @@ const Team = () => {
                   </div>
                   <p className="text-xs text-gray-600 font-medium">{member.credentials}</p>
                 </div>
-                
                 <div className="space-y-3">
                   <div>
-                    <h4 className="text-sm font-semibold text-gray-900 mb-1">Specialization</h4>
-                    <p className="text-xs text-gray-600">{member.specialization}</p>
+                    <h4 className="text-sm font-semibold text-gray-900 mb-1"> Specialization</h4>
                   </div>
-                  
+
+                  <div className="text-sm font-semibold text-gray-900 mb-1">
+                    {/* Professional Overview */}
+                    <p className="text-xs text-gray-600 leading-relaxed">{member.specialization}</p>
+                  </div>
+                </div>
+
+                <div className="space-y-3">
+                  <div>
+                    <h4 className="text-sm font-semibold text-gray-900 mb-1">
+                      {" "}
+                      Professional Overview
+                    </h4>
+                    {/* <p className="text-xs text-gray-600">{member.specialization}</p> */}
+                  </div>
+
                   <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    {/* Professional Overview */}
                     <p className="text-xs text-gray-600 leading-relaxed">{member.description}</p>
                   </div>
                 </div>
-                
+
                 {/* Contact button */}
-                <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                {/* <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <button className="w-full bg-gradient-to-r from-blue-600 to-green-600 text-white py-2 px-4 rounded-lg text-sm font-semibold hover:from-blue-700 hover:to-green-700 transition-all duration-300 flex items-center justify-center gap-2">
                     <Phone className="w-3 h-3" />
                     Contact
                   </button>
-                </div>
+                </div> */}
               </div>
             </div>
           ))}
         </div>
 
         {/* Team Stats */}
-        <div className="mt-16 bg-gradient-to-r from-blue-50 to-green-50 p-8 rounded-2xl">
+        {/* <div className="mt-16 bg-gradient-to-r from-blue-50 to-green-50 p-8 rounded-2xl">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-3xl font-bold text-blue-600 mb-2">75+</div>
@@ -143,7 +165,7 @@ const Team = () => {
               <div className="text-gray-600 text-sm">Client Satisfaction</div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
