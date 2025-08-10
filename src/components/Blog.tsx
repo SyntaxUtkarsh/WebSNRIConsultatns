@@ -523,7 +523,7 @@ const Blog = () => {
           </div>
 
           {/* Newsletter Signup */}
-          <div className="mt-16 bg-gradient-to-r from-orange-400 to-green-600 p-8 rounded-2xl text-white">
+          {/* <div className="mt-16 bg-gradient-to-r from-orange-400 to-green-600 p-8 rounded-2xl text-white">
             <div className="text-center">
               <h3 className="text-2xl font-bold mb-4">Stay Updated with NRI Insights</h3>
               <p className="text-blue-100 mb-6">
@@ -541,7 +541,7 @@ const Blog = () => {
                 </button>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
