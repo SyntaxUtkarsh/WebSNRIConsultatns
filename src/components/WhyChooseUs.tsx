@@ -5,31 +5,31 @@ const WhyChooseUs = () => {
   const reasons = [
     {
       icon: <Shield className="w-8 h-8" />,
-      title: "Trust & Transparency",
+      title: "Expertise in FEMA, RBI & Tax Laws",
       description:
-        "Zero hidden costs with full documentation and transparent processes. Every transaction is clearly explained and documented.",
-      highlight: "100% Transparent Pricing",
+        "We possess in-depth expertise in FEMA, RBI regulations, and tax laws, delivering precise and reliable advisory services to ensure compliances and effective management of regulatory obligations.",
+      highlight: "Regulatory Obligations",
     },
     {
       icon: <Award className="w-8 h-8" />,
       title: "Expertise in NRI Laws",
       description:
-        "Deep understanding of FEMA, RBI regulations, and NRI taxation rules. Our team stays updated with latest policy changes.",
-      highlight: "15+ Years Experience",
+        "Deep understanding of Income Tax Act 1961, RBI regulations, and NRI taxation rules. Our team stays updated with latest amendments and filing procedures.",
+      highlight: "20+ Years Experience",
     },
     {
       icon: <Users className="w-8 h-8" />,
       title: "End-to-End Assistance",
       description:
-        "From initial consultation to final execution, we handle every aspect of your requirements with dedicated support.",
-      highlight: "Complete Service Coverage",
+        "From initial consultation to final execution, we handle every aspect of transaction within agreed time-lines.",
+      highlight: "Complete Services Coverage",
     },
     {
       icon: <Globe className="w-8 h-8" />,
-      title: "Global Accessibility",
+      title: "Round the Clock Services",
       description:
-        "Work with us from anywhere in the world. Digital consultations, online documentation, and 24/7 support availability.",
-      highlight: "Available Worldwide",
+        "For convenience, we schedule Teams/ Google meetings as per the time slots preferred by the clients in international time zones.",
+      highlight: "24/7 Accesibility",
     },
   ];
 
