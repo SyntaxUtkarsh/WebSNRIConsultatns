@@ -1,12 +1,14 @@
-import React from 'react';
-import { Calendar, User, ArrowRight, TrendingUp } from 'lucide-react';
+import React from "react";
+import { Calendar, User, ArrowRight, TrendingUp } from "lucide-react";
 
 const Blog = () => {
   const blogPosts = [
     {
       title: "Top Investment Opportunities in India for NRIs in 2025",
-      excerpt: "Discover the most promising investment avenues for NRIs in 2025, from mutual funds to real estate and emerging sectors like renewable energy and technology.",
-      image: "https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&dpr=1",
+      excerpt:
+        "Discover the most promising investment avenues for NRIs in 2025, from mutual funds to real estate and emerging sectors like renewable energy and technology.",
+      image:
+        "https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&dpr=1",
       author: "Priya Patel",
       date: "January 15, 2025",
       readTime: "8 min read",
@@ -53,12 +55,14 @@ const Blog = () => {
         
         <h3>Conclusion</h3>
         <p>2025 presents exciting investment opportunities for NRIs in India. However, it's crucial to understand the regulatory framework and seek professional guidance to make informed investment decisions.</p>
-      `
+      `,
     },
     {
       title: "Complete Guide to Buying Property in India as an NRI",
-      excerpt: "Navigate the complexities of property purchase in India with our comprehensive guide covering legal requirements, financing options, and tax implications for NRIs.",
-      image: "https://images.pexels.com/photos/280229/pexels-photo-280229.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&dpr=1",
+      excerpt:
+        "Navigate the complexities of property purchase in India with our comprehensive guide covering legal requirements, financing options, and tax implications for NRIs.",
+      image:
+        "https://images.pexels.com/photos/280229/pexels-photo-280229.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&dpr=1",
       author: "Amit Kumar",
       date: "January 10, 2025",
       readTime: "12 min read",
@@ -140,12 +144,14 @@ const Blog = () => {
         
         <h3>Conclusion</h3>
         <p>Buying property in India as an NRI can be a rewarding investment with proper planning and professional guidance. Always consult with experts to ensure compliance and maximize returns.</p>
-      `
+      `,
     },
     {
       title: "NRI Taxation Rules in India – Everything You Must Know",
-      excerpt: "Comprehensive overview of NRI taxation in India, covering residential status, tax obligations, exemptions, and strategies for tax optimization in 2025.",
-      image: "https://images.pexels.com/photos/6863183/pexels-photo-6863183.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&dpr=1",
+      excerpt:
+        "Comprehensive overview of NRI taxation in India, covering residential status, tax obligations, exemptions, and strategies for tax optimization in 2025.",
+      image:
+        "https://images.pexels.com/photos/6863183/pexels-photo-6863183.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&dpr=1",
       author: "Rajesh Sharma",
       date: "January 8, 2025",
       readTime: "15 min read",
@@ -255,12 +261,14 @@ const Blog = () => {
         
         <h3>Conclusion</h3>
         <p>NRI taxation in India requires careful planning and compliance. Stay updated with changes and consult tax professionals for optimized tax planning strategies.</p>
-      `
+      `,
     },
     {
       title: "Due Diligence Checklist for NRIs Investing in Indian Businesses",
-      excerpt: "Essential due diligence steps for NRIs looking to invest in Indian businesses, including legal, financial, and operational aspects to ensure secure investments.",
-      image: "https://images.pexels.com/photos/3184431/pexels-photo-3184431.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&dpr=1",
+      excerpt:
+        "Essential due diligence steps for NRIs looking to invest in Indian businesses, including legal, financial, and operational aspects to ensure secure investments.",
+      image:
+        "https://images.pexels.com/photos/3184431/pexels-photo-3184431.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&dpr=1",
       author: "Deepika Singh",
       date: "January 5, 2025",
       readTime: "10 min read",
@@ -415,8 +423,8 @@ const Blog = () => {
         
         <h3>Conclusion</h3>
         <p>Thorough due diligence is essential for successful business investments in India. Take time to verify all aspects and seek professional guidance to make informed investment decisions.</p>
-      `
-    }
+      `,
+    },
   ];
 
   const [selectedPost, setSelectedPost] = React.useState<any>(null);
@@ -435,24 +443,27 @@ const Blog = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Expert <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-green-600">Insights</span>
+              Expert{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-green-600">
+                Insights
+              </span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Stay informed with our comprehensive guides and latest updates on NRI investments, 
+              Stay informed with our comprehensive guides and latest updates on NRI investments,
               taxation, and regulations. Expert insights to help you make informed decisions.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {blogPosts.map((post, index) => (
-              <article 
+              <article
                 key={index}
                 className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-gray-100 cursor-pointer"
                 onClick={() => openPost(post)}
               >
                 <div className="relative overflow-hidden">
-                  <img 
-                    src={post.image} 
+                  <img
+                    src={post.image}
                     alt={post.title}
                     className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
@@ -467,7 +478,7 @@ const Blog = () => {
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="p-6">
                   <div className="flex items-center gap-4 text-xs text-gray-500 mb-3">
                     <div className="flex items-center gap-1">
@@ -479,26 +490,26 @@ const Blog = () => {
                       <span>{post.date}</span>
                     </div>
                   </div>
-                  
+
                   <h3 className="text-lg font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-blue-600 transition-colors">
                     {post.title}
                   </h3>
-                  
+
                   <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3">
                     {post.excerpt}
                   </p>
-                  
+
                   <div className="flex flex-wrap gap-1 mb-4">
                     {post.tags.slice(0, 2).map((tag, idx) => (
-                      <span 
-                        key={idx} 
+                      <span
+                        key={idx}
                         className="bg-gray-100 text-gray-700 px-2 py-1 rounded-md text-xs"
                       >
                         {tag}
                       </span>
                     ))}
                   </div>
-                  
+
                   <div className="flex items-center justify-between">
                     <span className="text-xs text-gray-500">{post.readTime}</span>
                     <div className="flex items-center gap-1 text-blue-600 text-sm font-semibold group-hover:gap-2 transition-all">
@@ -516,11 +527,12 @@ const Blog = () => {
             <div className="text-center">
               <h3 className="text-2xl font-bold mb-4">Stay Updated with NRI Insights</h3>
               <p className="text-blue-100 mb-6">
-                Get the latest updates on NRI taxation, investment opportunities, and regulatory changes delivered to your inbox.
+                Get the latest updates on NRI taxation, investment opportunities, and regulatory
+                changes delivered to your inbox.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-                <input 
-                  type="email" 
+                <input
+                  type="email"
                   placeholder="Enter your email address"
                   className="flex-1 px-4 py-3 rounded-lg text-gray-900 placeholder-gray-500"
                 />
@@ -545,7 +557,7 @@ const Blog = () => {
                   </span>
                   <span className="text-gray-500 text-sm">{selectedPost.readTime}</span>
                 </div>
-                <button 
+                <button
                   onClick={closePost}
                   className="w-8 h-8 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center transition-colors"
                 >
@@ -555,12 +567,12 @@ const Blog = () => {
             </div>
 
             <div className="p-6">
-              <img 
-                src={selectedPost.image} 
+              <img
+                src={selectedPost.image}
                 alt={selectedPost.title}
                 className="w-full h-64 object-cover rounded-xl mb-6"
               />
-              
+
               <div className="flex items-center gap-4 text-sm text-gray-500 mb-4">
                 <div className="flex items-center gap-1">
                   <User className="w-4 h-4" />
@@ -571,41 +583,39 @@ const Blog = () => {
                   <span>{selectedPost.date}</span>
                 </div>
               </div>
-              
-              <h1 className="text-3xl font-bold text-gray-900 mb-4">
-                {selectedPost.title}
-              </h1>
-              
-              <p className="text-xl text-gray-600 mb-6 leading-relaxed">
-                {selectedPost.excerpt}
-              </p>
-              
+
+              <h1 className="text-3xl font-bold text-gray-900 mb-4">{selectedPost.title}</h1>
+
+              <p className="text-xl text-gray-600 mb-6 leading-relaxed">{selectedPost.excerpt}</p>
+
               <div className="flex flex-wrap gap-2 mb-8">
                 {selectedPost.tags.map((tag: string, idx: number) => (
-                  <span 
-                    key={idx} 
+                  <span
+                    key={idx}
                     className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm"
                   >
                     {tag}
                   </span>
                 ))}
               </div>
-              
-              <div 
+
+              <div
                 className="prose prose-lg max-w-none"
                 dangerouslySetInnerHTML={{ __html: selectedPost.content }}
               />
-              
+
               <div className="mt-12 p-6 bg-gradient-to-r from-blue-50 to-green-50 rounded-xl">
-                <h4 className="text-lg font-semibold text-gray-900 mb-3">Need Professional Guidance?</h4>
+                <h4 className="text-lg font-semibold text-gray-900 mb-3">
+                  Need Professional Guidance?
+                </h4>
                 <p className="text-gray-600 mb-4">
-                  Our experts are here to help you navigate complex NRI financial decisions. 
-                  Get personalized consultation tailored to your specific needs.
+                  Our experts are here to help you navigate complex NRI financial decisions. Get
+                  personalized consultation tailored to your specific needs.
                 </p>
-                <button 
+                <button
                   onClick={() => {
                     closePost();
-                    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
                   }}
                   className="bg-gradient-to-r from-blue-600 to-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-green-700 transition-all duration-300 flex items-center gap-2"
                 >

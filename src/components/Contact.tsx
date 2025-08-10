@@ -55,19 +55,16 @@ const Contact = () => {
     "UAE",
     "Singapore",
     "Germany",
-    "France",
-    "Netherlands",
     "Switzerland",
-    "Hong Kong",
     "Japan",
     "Other",
   ];
 
   const services = [
-    "Financial Consulting",
-    "Due Diligence",
-    "Investment Advisory",
-    "Real Estate Transactions",
+    "Cross Border Transactions",
+    "Taxation",
+    "Investments",
+    "Property / Real Estate Matters",
     "General Inquiry",
   ];
 
@@ -253,7 +250,7 @@ const Contact = () => {
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">Phone Support</h4>
                   <p className="text-gray-600">+91 9899499399</p>
-                  <p className="text-gray-600">Toll Free: 1800-123-4567</p>
+                  {/* <p className="text-gray-600">Toll Free: 1800-123-4567</p> */}
                 </div>
               </div>
 
@@ -264,7 +261,6 @@ const Contact = () => {
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">Email Support</h4>
                   <p className="text-gray-600">info@nriconsultants.com</p>
-                  <p className="text-gray-600">support@nriconsultants.com</p>
                 </div>
               </div>
 
@@ -288,58 +284,17 @@ const Contact = () => {
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">Office Address</h4>
                   <p className="text-gray-600">
-                    NRI Consultants Tower,
+                    616, Sector 16,
                     <br />
-                    Business District, Gurgaon - 122002
+                    Faridabad - 121001
                     <br />
                     Haryana, India
                   </p>
                 </div>
               </div>
-
-              <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-xl">
-                <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
-                  <Clock className="w-6 h-6 text-blue-600" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">Business Hours</h4>
-                  <p className="text-gray-600">
-                    Monday - Friday: 9:00 AM - 7:00 PM IST
-                    <br />
-                    Saturday: 10:00 AM - 4:00 PM IST
-                    <br />
-                    Sunday: Closed
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Quick Response Guarantee */}
-            <div className="bg-gradient-to-r from-blue-600 to-green-600 p-6 rounded-2xl text-white">
-              <h4 className="text-lg font-bold mb-3">Quick Response Guarantee</h4>
-              <p className="text-blue-100 mb-4">
-                We understand your time is valuable. We guarantee:
-              </p>
-              <ul className="space-y-2 text-blue-100">
-                <li>• Email responses within 4 hours</li>
-                <li>• Phone callback within 2 hours</li>
-                <li>• WhatsApp replies within 30 minutes</li>
-                <li>• Emergency support 24/7</li>
-              </ul>
             </div>
           </div>
         </div>
-
-        {/* Google Map Placeholder */}
-        {/* <div className="mt-16">
-          <div className="bg-gray-100 h-64 rounded-2xl flex items-center justify-center">
-            <div className="text-center text-gray-500">
-              <MapPin className="w-12 h-12 mx-auto mb-4" />
-              <p className="text-lg font-semibold">Interactive Map</p>
-              <p className="text-sm">Our office location in Gurgaon, India</p>
-            </div>
-          </div>
-        </div> */}
       </div>
     </section>
   );
