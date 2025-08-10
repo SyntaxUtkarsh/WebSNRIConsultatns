@@ -38,7 +38,7 @@ const Team = () => {
       position: "Senior Consultant",
       experience: "Professional Practice: 11 Years",
       specialization: "Investements, Valuation & Financial Markets Analysis",
-      image: "/assets/nischintPaliwal.jpg",
+      image: "/assets/NischintLatest.png",
       credentials: "LLB, MBA",
       description:
         "Nishchint Paliwal is an investment banking professional with 25+ years of experience in corporate finance, asset management for NRIs, and startup advisory. He has led high-value transactions, fund-raising, and FDI structuring, and has held senior roles at top Indian banks. He brings a blend of global best practices and deep market insight.",
@@ -55,7 +55,7 @@ const Team = () => {
     },
     {
       name: "Vedant Adlakha",
-      position: "Legal Consultant",
+      position: "Associate",
       experience: "Professional Practice: 3 Years",
       specialization: "Documentation, Title Search & Certifications",
       image: "/assets/vedant.jpg",
