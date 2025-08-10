@@ -1,11 +1,11 @@
-import React from 'react';
-import { Mail, Phone, MapPin, Linkedin, Youtube, Instagram, ArrowRight } from 'lucide-react';
+import React from "react";
+import { Mail, Phone, MapPin, Linkedin, Youtube, Instagram, ArrowRight } from "lucide-react";
 
 const Footer = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -23,8 +23,8 @@ const Footer = () => {
               <span className="ml-2 text-xl font-bold">Consultants</span>
             </div>
             <p className="text-gray-300 leading-relaxed">
-              Your trusted partner for NRI financial services, investment advisory, 
-              and property transactions in India. Expert guidance for 15+ years.
+              Your trusted partner for NRI financial services, investment advisory, and property
+              transactions in India. Expert guidance for 15+ years.
             </p>
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-gray-300">
@@ -46,32 +46,32 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-6">Quick Links</h3>
             <div className="space-y-3">
-              <button 
-                onClick={() => scrollToSection('home')}
+              <button
+                onClick={() => scrollToSection("home")}
                 className="block text-gray-300 hover:text-white transition-colors hover:translate-x-1 transform duration-200"
               >
                 Home
               </button>
-              <button 
-                onClick={() => scrollToSection('services')}
+              <button
+                onClick={() => scrollToSection("services")}
                 className="block text-gray-300 hover:text-white transition-colors hover:translate-x-1 transform duration-200"
               >
                 Our Services
               </button>
-              <button 
-                onClick={() => scrollToSection('team')}
+              <button
+                onClick={() => scrollToSection("team")}
                 className="block text-gray-300 hover:text-white transition-colors hover:translate-x-1 transform duration-200"
               >
                 Our Team
               </button>
-              <button 
-                onClick={() => scrollToSection('blog')}
+              <button
+                onClick={() => scrollToSection("blog")}
                 className="block text-gray-300 hover:text-white transition-colors hover:translate-x-1 transform duration-200"
               >
                 Expert Insights
               </button>
-              <button 
-                onClick={() => scrollToSection('contact')}
+              <button
+                onClick={() => scrollToSection("contact")}
                 className="block text-gray-300 hover:text-white transition-colors hover:translate-x-1 transform duration-200"
               >
                 Contact Us
@@ -118,9 +118,9 @@ const Footer = () => {
                 <ArrowRight className="w-4 h-4" />
               </button>
             </div>
-            
+
             {/* Social Media */}
-            <div className="mt-6">
+            {/* <div className="mt-6">
               <h4 className="text-sm font-semibold mb-3">Follow Us</h4>
               <div className="flex gap-3">
                 <div className="w-10 h-10 bg-gray-800 hover:bg-blue-600 rounded-lg flex items-center justify-center cursor-pointer transition-colors">
@@ -133,13 +133,13 @@ const Footer = () => {
                   <Instagram className="w-5 h-5" />
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
 
       {/* Trust Indicators */}
-      <div className="border-t border-gray-800">
+      {/* <div className="border-t border-gray-800">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
@@ -160,20 +160,26 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Bottom Footer */}
       <div className="border-t border-gray-800">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="text-gray-400 text-sm">
-              © 2025 NRIConsultants. All rights reserved.
-            </div>
+            <div className="text-gray-400 text-sm">© 2025 NRIConsultants. All rights reserved.</div>
             <div className="flex gap-6 text-sm text-gray-400">
-              <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-              <a href="#" className="hover:text-white transition-colors">Cookie Policy</a>
-              <a href="#" className="hover:text-white transition-colors">Disclaimer</a>
+              <a href="#" className="hover:text-white transition-colors">
+                Privacy Policy
+              </a>
+              <a href="#" className="hover:text-white transition-colors">
+                Terms of Service
+              </a>
+              <a href="#" className="hover:text-white transition-colors">
+                Cookie Policy
+              </a>
+              <a href="#" className="hover:text-white transition-colors">
+                Disclaimer
+              </a>
             </div>
           </div>
         </div>

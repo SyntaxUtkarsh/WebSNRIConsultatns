@@ -1,32 +1,36 @@
-import React from 'react';
-import { Shield, Award, Globe, Users } from 'lucide-react';
+import React from "react";
+import { Shield, Award, Globe, Users } from "lucide-react";
 
 const WhyChooseUs = () => {
   const reasons = [
     {
       icon: <Shield className="w-8 h-8" />,
       title: "Trust & Transparency",
-      description: "Zero hidden costs with full documentation and transparent processes. Every transaction is clearly explained and documented.",
-      highlight: "100% Transparent Pricing"
+      description:
+        "Zero hidden costs with full documentation and transparent processes. Every transaction is clearly explained and documented.",
+      highlight: "100% Transparent Pricing",
     },
     {
       icon: <Award className="w-8 h-8" />,
       title: "Expertise in NRI Laws",
-      description: "Deep understanding of FEMA, RBI regulations, and NRI taxation rules. Our team stays updated with latest policy changes.",
-      highlight: "15+ Years Experience"
+      description:
+        "Deep understanding of FEMA, RBI regulations, and NRI taxation rules. Our team stays updated with latest policy changes.",
+      highlight: "15+ Years Experience",
     },
     {
       icon: <Users className="w-8 h-8" />,
       title: "End-to-End Assistance",
-      description: "From initial consultation to final execution, we handle every aspect of your requirements with dedicated support.",
-      highlight: "Complete Service Coverage"
+      description:
+        "From initial consultation to final execution, we handle every aspect of your requirements with dedicated support.",
+      highlight: "Complete Service Coverage",
     },
     {
       icon: <Globe className="w-8 h-8" />,
       title: "Global Accessibility",
-      description: "Work with us from anywhere in the world. Digital consultations, online documentation, and 24/7 support availability.",
-      highlight: "Available Worldwide"
-    }
+      description:
+        "Work with us from anywhere in the world. Digital consultations, online documentation, and 24/7 support availability.",
+      highlight: "Available Worldwide",
+    },
   ];
 
   return (
@@ -34,33 +38,36 @@ const WhyChooseUs = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Why Choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-green-600">NRIConsultants</span>
+            Why Choose{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-green-600">
+              NRIConsultants
+            </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We understand the unique challenges NRIs face when managing finances and investments in India. 
-            Our expertise ensures you make informed decisions with complete peace of mind.
+            We understand the unique challenges NRIs face when managing finances and investments in
+            India. Our expertise ensures you make informed decisions with complete peace of mind.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {reasons.map((reason, index) => (
-            <div 
+            <div
               key={index}
               className="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100"
             >
               <div className="text-blue-600 mb-6 group-hover:scale-110 transition-transform duration-300">
                 {reason.icon}
               </div>
-              
+
               <div className="mb-4">
                 <div className="inline-block bg-gradient-to-r from-blue-100 to-green-100 text-blue-800 px-3 py-1 rounded-full text-xs font-semibold mb-3">
                   {reason.highlight}
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{reason.title}</h3>
               </div>
-              
+
               <p className="text-gray-600 leading-relaxed">{reason.description}</p>
-              
+
               {/* Decorative element */}
               <div className="mt-6 w-12 h-1 bg-gradient-to-r from-blue-400 to-green-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
@@ -68,7 +75,7 @@ const WhyChooseUs = () => {
         </div>
 
         {/* Trust Indicators */}
-        <div className="mt-16 bg-white p-8 rounded-2xl shadow-lg">
+        {/* <div className="mt-16 bg-white p-8 rounded-2xl shadow-lg">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-3xl font-bold text-blue-600 mb-2">5000+</div>
@@ -87,7 +94,7 @@ const WhyChooseUs = () => {
               <div className="text-gray-600 text-sm">Client Retention</div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
