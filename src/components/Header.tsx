@@ -12,6 +12,21 @@ const Header = () => {
     }
   };
 
+  const navigateToServices = () => {
+    window.location.href = '/services';
+    setIsMenuOpen(false);
+  };
+
+  const handleConsultNow = () => {
+    // If we're on the services page, navigate back to home first
+    if (window.location.pathname === '/services') {
+      window.location.href = '/#contact';
+    } else {
+      scrollToSection('contact');
+    }
+    setIsMenuOpen(false);
+  };
+
   return (
     <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50 border-b border-gray-100">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -39,6 +54,12 @@ const Header = () => {
               Services
             </button>
             <button
+              onClick={navigateToServices}
+              className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+            >
+              Our Services
+            </button>
+            <button
               onClick={() => scrollToSection("team")}
               className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
             >
@@ -59,15 +80,13 @@ const Header = () => {
           </nav>
 
           {/* Contact Info */}
-          <div className="hidden xl:flex items-center space-x-4">
-            <div className="flex items-center text-sm text-gray-600">
-              <Phone className="w-4 h-4 mr-2" />
-              <span>+91 9899499399</span>
-            </div>
-            <div className="flex items-center text-sm text-gray-600">
-              <Mail className="w-4 h-4 mr-2" />
-              <span>info@nriconsultants.com</span>
-            </div>
+          <div className="hidden lg:flex items-center">
+            <button
+              onClick={handleConsultNow}
+              className="bg-gradient-to-r from-blue-600 to-green-600 text-white px-6 py-2 rounded-full font-semibold hover:from-blue-700 hover:to-green-700 transition-all duration-300 transform hover:scale-105 shadow-md"
+            >
+              Consult Now
+            </button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -96,6 +115,12 @@ const Header = () => {
                 Services
               </button>
               <button
+                onClick={navigateToServices}
+                className="text-left text-gray-700 hover:text-blue-600 font-medium transition-colors"
+              >
+                Our Services
+              </button>
+              <button
                 onClick={() => scrollToSection("team")}
                 className="text-left text-gray-700 hover:text-blue-600 font-medium transition-colors"
               >
@@ -114,16 +139,12 @@ const Header = () => {
                 Contact
               </button>
               <div className="pt-4 border-t border-gray-200">
-                <div className="flex flex-col space-y-2 text-sm text-gray-600">
-                  <div className="flex items-center">
-                    <Phone className="w-4 h-4 mr-2" />
-                    <span>+91 9899499399</span>
-                  </div>
-                  <div className="flex items-center">
-                    <Mail className="w-4 h-4 mr-2" />
-                    <span>info@nriconsultants.com</span>
-                  </div>
-                </div>
+                <button
+                  onClick={handleConsultNow}
+                  className="w-full bg-gradient-to-r from-blue-600 to-green-600 text-white px-6 py-3 rounded-full font-semibold hover:from-blue-700 hover:to-green-700 transition-all duration-300"
+                >
+                  Consult Now
+                </button>
               </div>
             </nav>
           </div>
