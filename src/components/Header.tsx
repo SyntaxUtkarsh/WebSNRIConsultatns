@@ -47,17 +47,17 @@ const Header = () => {
             >
               Home
             </button>
-            <button
+            {/* <button
               onClick={() => scrollToSection("services")}
               className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
             >
               Services
-            </button>
+            </button> */}
             <button
               onClick={() => window.location.href = '/services'}
               className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
             >
-              Detailed Services
+              Services
             </button>
             <button
               onClick={() => scrollToSection("team")}
