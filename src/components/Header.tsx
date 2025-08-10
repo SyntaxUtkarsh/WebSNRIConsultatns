@@ -54,10 +54,10 @@ const Header = () => {
               Services
             </button>
             <button
-              onClick={navigateToServices}
+              onClick={() => window.location.href = '/services'}
               className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
             >
-              Our Services
+              Detailed Services
             </button>
             <button
               onClick={() => scrollToSection("team")}
@@ -83,7 +83,7 @@ const Header = () => {
           <div className="hidden lg:flex items-center">
             <button
               onClick={handleConsultNow}
-              className="bg-gradient-to-r from-blue-600 to-green-600 text-white px-6 py-2 rounded-full font-semibold hover:from-blue-700 hover:to-green-700 transition-all duration-300 transform hover:scale-105 shadow-md"
+              className="bg-gradient-to-r from-blue-600 to-green-600 text-white px-6 py-3 rounded-full font-semibold hover:from-blue-700 hover:to-green-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
               Consult Now
             </button>
@@ -115,10 +115,10 @@ const Header = () => {
                 Services
               </button>
               <button
-                onClick={navigateToServices}
+                onClick={() => window.location.href = '/services'}
                 className="text-left text-gray-700 hover:text-blue-600 font-medium transition-colors"
               >
-                Our Services
+                Detailed Services
               </button>
               <button
                 onClick={() => scrollToSection("team")}

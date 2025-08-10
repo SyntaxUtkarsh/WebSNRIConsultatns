@@ -1,7 +1,17 @@
 import React from "react";
-// import { LinkedinIcon, Mail, Phone } from "lucide-react";
+import { Plus, X } from "lucide-react";
 
 const Team = () => {
+  const [selectedMember, setSelectedMember] = React.useState<any>(null);
+
+  const openMemberModal = (member: any) => {
+    setSelectedMember(member);
+  };
+
+  const closeMemberModal = () => {
+    setSelectedMember(null);
+  };
+
   const teamMembers = [
     {
       name: "RR Pathak",
@@ -75,97 +85,87 @@ const Team = () => {
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-gray-100"
+              className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-gray-100 relative"
             >
               <div className="relative overflow-hidden">
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
-                {/* Social Links - appear on hover */}
-                {/* <div className="absolute bottom-4 left-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="w-8 h-8 bg-white/90 rounded-full flex items-center justify-center cursor-pointer hover:bg-white transition-colors">
-                    <LinkedinIcon className="w-4 h-4 text-blue-600" />
-                  </div>
-                  <div className="w-8 h-8 bg-white/90 rounded-full flex items-center justify-center cursor-pointer hover:bg-white transition-colors">
-                    <Mail className="w-4 h-4 text-gray-600" />
-                  </div>
-                </div> */}
+                {/* Plus Button */}
+                <button
+                  onClick={() => openMemberModal(member)}
+                  className="absolute bottom-4 right-4 w-10 h-10 bg-white/90 hover:bg-white rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 shadow-lg hover:shadow-xl"
+                >
+                  <Plus className="w-5 h-5 text-blue-600" />
+                </button>
               </div>
 
-              <div className="p-6">
-                <div className="mb-4">
+              <div className="p-4">
+                <div className="mb-2">
                   <h3 className="text-lg font-bold text-gray-900 mb-1">{member.name}</h3>
                   <p className="text-blue-600 font-semibold text-sm mb-2">{member.position}</p>
-                  <div className="flex items-center gap-4 text-xs text-gray-500 mb-2">
-                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded-full">
-                      {member.experience}
-                    </span>
-                  </div>
+                </div>
+                <div className="space-y-1">
                   <p className="text-xs text-gray-600 font-medium">{member.credentials}</p>
+                  <p className="text-xs text-gray-500 leading-relaxed line-clamp-2">{member.specialization}</p>
                 </div>
-                <div className="space-y-3">
-                  <div>
-                    <h4 className="text-sm font-semibold text-gray-900 mb-1"> Specialization</h4>
-                  </div>
-
-                  <div className="text-sm font-semibold text-gray-900 mb-1">
-                    {/* Professional Overview */}
-                    <p className="text-xs text-gray-600 leading-relaxed">{member.specialization}</p>
-                  </div>
-                </div>
-
-                <div className="space-y-3">
-                  <div>
-                    <h4 className="text-sm font-semibold text-gray-900 mb-1">
-                      {" "}
-                      Professional Overview
-                    </h4>
-                    {/* <p className="text-xs text-gray-600">{member.specialization}</p> */}
-                  </div>
-
-                  <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    {/* Professional Overview */}
-                    <p className="text-xs text-gray-600 leading-relaxed">{member.description}</p>
-                  </div>
-                </div>
-
-                {/* Contact button */}
-                {/* <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <button className="w-full bg-gradient-to-r from-blue-600 to-green-600 text-white py-2 px-4 rounded-lg text-sm font-semibold hover:from-blue-700 hover:to-green-700 transition-all duration-300 flex items-center justify-center gap-2">
-                    <Phone className="w-3 h-3" />
-                    Contact
-                  </button>
-                </div> */}
               </div>
             </div>
           ))}
         </div>
 
-        {/* Team Stats */}
-        {/* <div className="mt-16 bg-gradient-to-r from-blue-50 to-green-50 p-8 rounded-2xl">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-3xl font-bold text-blue-600 mb-2">75+</div>
-              <div className="text-gray-600 text-sm">Combined Years of Experience</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-green-600 mb-2">20+</div>
-              <div className="text-gray-600 text-sm">Professional Certifications</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-orange-600 mb-2">15+</div>
-              <div className="text-gray-600 text-sm">Industry Awards</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-purple-600 mb-2">100%</div>
-              <div className="text-gray-600 text-sm">Client Satisfaction</div>
+        {/* Team Member Modal */}
+        {selectedMember && (
+          <div className="fixed inset-0 z-50 bg-black/50 flex items-center justify-center p-4 overflow-y-auto">
+            <div className="bg-white rounded-2xl shadow-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto">
+              <div className="sticky top-0 bg-white p-6 border-b border-gray-200 rounded-t-2xl flex items-center justify-between">
+                <h3 className="text-2xl font-bold text-gray-900">{selectedMember.name}</h3>
+                <button 
+                  onClick={closeMemberModal}
+                  className="w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center transition-colors"
+                >
+                  <X className="w-5 h-5 text-gray-600" />
+                </button>
+              </div>
+              
+              <div className="p-6">
+                <div className="flex flex-col md:flex-row gap-6 mb-6">
+                  <img 
+                    src={selectedMember.image} 
+                    alt={selectedMember.name}
+                    className="w-full md:w-48 h-64 object-cover rounded-xl"
+                  />
+                  <div className="flex-1">
+                    <p className="text-blue-600 font-semibold text-lg mb-2">{selectedMember.position}</p>
+                    <div className="space-y-3">
+                      <div>
+                        <h4 className="font-semibold text-gray-900 mb-1">Experience</h4>
+                        <p className="text-gray-600">{selectedMember.experience}</p>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-gray-900 mb-1">Credentials</h4>
+                        <p className="text-gray-600">{selectedMember.credentials}</p>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-gray-900 mb-1">Specialization</h4>
+                        <p className="text-gray-600">{selectedMember.specialization}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-3">Professional Overview</h4>
+                  <p className="text-gray-600 leading-relaxed">{selectedMember.description}</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div> */}
+        )}
       </div>
     </section>
   );

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, DollarSign, FileText, Home, Globe, CheckCircle, Star, Users, Shield, Clock } from 'lucide-react';
+import { ArrowRight, DollarSign, FileText, Home, Globe, CheckCircle, Star, Users, Shield, Clock, TrendingUp, Calculator, Building, CreditCard } from 'lucide-react';
 
 const ServicesPage = () => {
   const scrollToSection = (sectionId: string) => {
@@ -18,28 +18,29 @@ const ServicesPage = () => {
     {
       icon: <DollarSign className="w-8 h-8" />,
       title: "Personal Finance Services",
-      description: "Comprehensive mutual fund investment solutions tailored for NRIs",
+      subtitle: "Mutual Funds",
+      description: "Expert mutual fund investment solutions tailored for NRIs with personalized recommendations and secure transactions",
       anchor: "personal-finance",
       color: "blue"
     },
     {
       icon: <FileText className="w-8 h-8" />,
       title: "Income Tax Services", 
-      description: "Expert tax planning and compliance for NRI taxation requirements",
+      description: "Comprehensive tax planning, filing, and compliance services ensuring smooth financial transactions in India",
       anchor: "income-tax",
       color: "green"
     },
     {
       icon: <Home className="w-8 h-8" />,
       title: "Real Estate Services",
-      description: "End-to-end property transaction support in India",
+      description: "Complete support for property transactions including negotiation, documentation, and legal compliance",
       anchor: "real-estate", 
       color: "orange"
     },
     {
       icon: <Globe className="w-8 h-8" />,
       title: "Cross-Border Transactions",
-      description: "Seamless international money transfers and compliance",
+      description: "Expert solutions for international remittances, certifications, and regulatory compliance",
       anchor: "cross-border",
       color: "purple"
     }
@@ -48,33 +49,33 @@ const ServicesPage = () => {
   const whyChoosePoints = [
     {
       icon: <Shield className="w-6 h-6" />,
-      title: "FEMA & RBI Expertise",
-      description: "Deep knowledge of regulatory compliance and legal requirements"
-    },
-    {
-      icon: <Users className="w-6 h-6" />,
-      title: "Personalized Service",
-      description: "Dedicated relationship managers for each client"
+      title: "Expertise in FEMA, RBI & Tax Laws",
+      description: "In-depth expertise in FEMA, RBI regulations, and tax laws, delivering precise and reliable advisory services"
     },
     {
       icon: <Star className="w-6 h-6" />,
-      title: "Proven Track Record",
-      description: "270+ satisfied clients with successful transactions"
+      title: "Expertise in NRI Laws",
+      description: "Deep understanding of Income Tax Act 1961, RBI regulations, and NRI taxation rules with latest amendments"
+    },
+    {
+      icon: <Users className="w-6 h-6" />,
+      title: "End-to-End Assistance",
+      description: "Complete transaction management from initial consultation to final execution within agreed timelines"
     },
     {
       icon: <Clock className="w-6 h-6" />,
-      title: "24/7 Global Support",
-      description: "Round-the-clock assistance across international time zones"
+      title: "Round the Clock Services",
+      description: "Teams/Google meetings scheduled as per client preferences in international time zones"
     },
     {
       icon: <CheckCircle className="w-6 h-6" />,
-      title: "End-to-End Solutions",
-      description: "Complete transaction management from start to finish"
+      title: "Trusted by NRIs & Businesses",
+      description: "Proven track record in global transactions with emphasis on accuracy, confidentiality, and efficiency"
     },
     {
       icon: <Globe className="w-6 h-6" />,
-      title: "Multi-Country Experience",
-      description: "Serving NRIs across 20+ countries worldwide"
+      title: "Personalized Assistance",
+      description: "Tailored solutions for unique needs with dedicated support throughout your financial journey"
     }
   ];
 
@@ -133,7 +134,8 @@ const ServicesPage = () => {
                 <div className="text-gray-700 mb-6 group-hover:scale-110 transition-transform duration-300">
                   {card.icon}
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">{card.title}</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">{card.title}</h3>
+                {card.subtitle && <p className="text-sm font-semibold text-blue-600 mb-4">{card.subtitle}</p>}
                 <p className="text-gray-600 mb-6">{card.description}</p>
                 <div className="flex items-center text-blue-600 font-semibold group-hover:gap-2 transition-all">
                   <span>Learn More</span>
@@ -145,46 +147,54 @@ const ServicesPage = () => {
         </div>
       </section>
 
-      {/* Detailed Service Sections */}
-      
-      {/* Personal Finance Services */}
+      {/* Personal Finance Services - Mutual Funds */}
       <section id="personal-finance" className="py-20 bg-gradient-to-br from-blue-50 to-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">Personal Finance Services (Mutual Funds)</h2>
+              <h2 className="text-4xl font-bold text-gray-900 mb-6">Personal Finance Services</h2>
+              <h3 className="text-2xl font-semibold text-blue-600 mb-4">Mutual Funds</h3>
               <p className="text-lg text-gray-600 mb-8">
-                Strategic investment solutions designed specifically for NRIs to build wealth through Indian mutual funds with expert guidance and regulatory compliance.
+                When it comes to investing, every decision revolves around three key factors: Safety of principal, Return on capital, and Income tax implications. Our mutual fund investment platform offers expert advice, secure transactions, and comprehensive portfolio management.
               </p>
               
               <div className="space-y-6">
                 <div className="bg-white p-6 rounded-xl shadow-sm border border-blue-100">
-                  <h4 className="font-semibold text-gray-900 mb-3">Investment Planning & Advisory</h4>
-                  <ul className="space-y-2 text-gray-600">
-                    <li>• Personalized investment strategy based on risk appetite</li>
-                    <li>• Portfolio diversification across equity and debt funds</li>
-                    <li>• Goal-based investment planning (retirement, education, etc.)</li>
-                    <li>• Regular portfolio review and rebalancing</li>
+                  <div className="flex items-center gap-3 mb-3">
+                    <TrendingUp className="w-5 h-5 text-blue-600" />
+                    <h4 className="font-semibold text-gray-900">Personalized Recommendations</h4>
+                  </div>
+                  <p className="text-gray-600 mb-3">We assess your risk appetite and investment objectives to recommend suitable mutual fund schemes from reputed fund houses.</p>
+                  <ul className="space-y-1 text-sm text-gray-600">
+                    <li>• In-depth research from trusted financial analysts</li>
+                    <li>• Risk-based portfolio allocation</li>
+                    <li>• Goal-oriented investment planning</li>
                   </ul>
                 </div>
                 
                 <div className="bg-white p-6 rounded-xl shadow-sm border border-blue-100">
-                  <h4 className="font-semibold text-gray-900 mb-3">Mutual Fund Selection</h4>
-                  <ul className="space-y-2 text-gray-600">
-                    <li>• Research-backed fund recommendations</li>
-                    <li>• Performance analysis and comparison</li>
-                    <li>• Tax-efficient fund selection</li>
-                    <li>• ELSS funds for tax saving under Section 80C</li>
+                  <div className="flex items-center gap-3 mb-3">
+                    <Shield className="w-5 h-5 text-green-600" />
+                    <h4 className="font-semibold text-gray-900">Secure Transactions</h4>
+                  </div>
+                  <p className="text-gray-600 mb-3">Online platform powered by National Stock Exchange (NSE) - highly secure and fully reliable system.</p>
+                  <ul className="space-y-1 text-sm text-gray-600">
+                    <li>• No access to your funds</li>
+                    <li>• No convenience or transaction fees</li>
+                    <li>• Digital processing with complete transparency</li>
                   </ul>
                 </div>
                 
                 <div className="bg-white p-6 rounded-xl shadow-sm border border-blue-100">
-                  <h4 className="font-semibold text-gray-900 mb-3">NRI Compliance & Documentation</h4>
-                  <ul className="space-y-2 text-gray-600">
-                    <li>• KYC completion and maintenance</li>
-                    <li>• NRE/NRO account setup guidance</li>
-                    <li>• FATCA and CRS compliance</li>
-                    <li>• Investment limit monitoring as per RBI guidelines</li>
+                  <div className="flex items-center gap-3 mb-3">
+                    <Users className="w-5 h-5 text-orange-600" />
+                    <h4 className="font-semibold text-gray-900">Portfolio Reviews & Follow-up</h4>
+                  </div>
+                  <p className="text-gray-600 mb-3">Regular portfolio reviews ensuring investments remain aligned with goals and market conditions.</p>
+                  <ul className="space-y-1 text-sm text-gray-600">
+                    <li>• Periodic performance analysis</li>
+                    <li>• Redemption and switching advice</li>
+                    <li>• Smooth fund transfer coordination</li>
                   </ul>
                 </div>
               </div>
@@ -197,8 +207,8 @@ const ServicesPage = () => {
                 className="rounded-2xl shadow-2xl w-full h-[500px] object-cover"
               />
               <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-lg">
-                <div className="text-2xl font-bold text-blue-600">15%+</div>
-                <div className="text-sm text-gray-600">Average Returns</div>
+                <div className="text-2xl font-bold text-blue-600">NSE</div>
+                <div className="text-sm text-gray-600">Powered Platform</div>
               </div>
             </div>
           </div>
@@ -217,45 +227,47 @@ const ServicesPage = () => {
               />
               <div className="absolute -bottom-6 -right-6 bg-white p-4 rounded-xl shadow-lg">
                 <div className="text-2xl font-bold text-green-600">100%</div>
-                <div className="text-sm text-gray-600">Compliance Rate</div>
+                <div className="text-sm text-gray-600">Legal Compliance</div>
               </div>
             </div>
             
             <div className="order-1 lg:order-2">
               <h2 className="text-4xl font-bold text-gray-900 mb-6">Income Tax Services</h2>
               <p className="text-lg text-gray-600 mb-8">
-                Comprehensive tax planning and compliance services to optimize your tax liability while ensuring full adherence to Indian tax regulations.
+                With increasing digitization and strict monitoring by the Income Tax Department, accurate return filing and timely tax deposits have become crucial. We provide comprehensive income tax consultancy services for smooth, hassle-free financial transactions.
               </p>
               
               <div className="space-y-6">
                 <div className="bg-gradient-to-r from-green-50 to-white p-6 rounded-xl border border-green-100">
-                  <h4 className="font-semibold text-gray-900 mb-3">Tax Planning & Optimization</h4>
-                  <ul className="space-y-2 text-gray-600">
-                    <li>• Residential status determination</li>
-                    <li>• Tax liability calculation and planning</li>
-                    <li>• Double Taxation Avoidance Agreement (DTAA) benefits</li>
-                    <li>• Investment planning for tax efficiency</li>
-                  </ul>
+                  <div className="flex items-center gap-3 mb-3">
+                    <FileText className="w-5 h-5 text-green-600" />
+                    <h4 className="font-semibold text-gray-900">Online Income Tax Return Filing</h4>
+                  </div>
+                  <p className="text-gray-600 mb-3">Accurate and timely e-filing for individuals and businesses with complete documentation support.</p>
                 </div>
                 
                 <div className="bg-gradient-to-r from-green-50 to-white p-6 rounded-xl border border-green-100">
-                  <h4 className="font-semibold text-gray-900 mb-3">Tax Return Filing & Compliance</h4>
-                  <ul className="space-y-2 text-gray-600">
-                    <li>• ITR preparation and e-filing</li>
-                    <li>• TDS return filing and reconciliation</li>
-                    <li>• Advance tax calculation and payment</li>
-                    <li>• Tax refund processing and follow-up</li>
-                  </ul>
+                  <div className="flex items-center gap-3 mb-3">
+                    <Calculator className="w-5 h-5 text-blue-600" />
+                    <h4 className="font-semibold text-gray-900">Advance Tax & TDS Reconciliation</h4>
+                  </div>
+                  <p className="text-gray-600 mb-3">Computation, payment, and reconciliation to avoid penalties with systematic tracking.</p>
                 </div>
                 
                 <div className="bg-gradient-to-r from-green-50 to-white p-6 rounded-xl border border-green-100">
-                  <h4 className="font-semibold text-gray-900 mb-3">Capital Gains Management</h4>
-                  <ul className="space-y-2 text-gray-600">
-                    <li>• Capital gains calculation on property and investments</li>
-                    <li>• Indexation benefits and exemptions</li>
-                    <li>• Section 54/54F exemption planning</li>
-                    <li>• Tax certificates for property transactions</li>
-                  </ul>
+                  <div className="flex items-center gap-3 mb-3">
+                    <CreditCard className="w-5 h-5 text-orange-600" />
+                    <h4 className="font-semibold text-gray-900">Capital Gains Tax Calculation & TDS Certification</h4>
+                  </div>
+                  <p className="text-gray-600 mb-3">For property sales, share disinvestments, and other capital asset transactions.</p>
+                </div>
+                
+                <div className="bg-gradient-to-r from-green-50 to-white p-6 rounded-xl border border-green-100">
+                  <div className="flex items-center gap-3 mb-3">
+                    <Globe className="w-5 h-5 text-purple-600" />
+                    <h4 className="font-semibold text-gray-900">FEMA Compliance & RBI Approvals</h4>
+                  </div>
+                  <p className="text-gray-600 mb-3">Guidance on repatriation, asset management, investments, and business advisory support.</p>
                 </div>
               </div>
             </div>
@@ -270,37 +282,46 @@ const ServicesPage = () => {
             <div>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">Real Estate Services</h2>
               <p className="text-lg text-gray-600 mb-8">
-                Complete property transaction support from search to registration, ensuring legal compliance and optimal value for your real estate investments in India.
+                We understand the complexities involved in buying, selling, and renting properties in India, especially for NRIs who have limited time during visits. We provide complete support and representation to save your valuable time.
               </p>
               
               <div className="space-y-6">
                 <div className="bg-white p-6 rounded-xl shadow-sm border border-orange-100">
-                  <h4 className="font-semibold text-gray-900 mb-3">Property Search & Evaluation</h4>
-                  <ul className="space-y-2 text-gray-600">
-                    <li>• Market research and property identification</li>
-                    <li>• Property valuation and price negotiation</li>
-                    <li>• Location analysis and investment potential</li>
-                    <li>• Legal title verification and due diligence</li>
+                  <div className="flex items-center gap-3 mb-3">
+                    <TrendingUp className="w-5 h-5 text-orange-600" />
+                    <h4 className="font-semibold text-gray-900">Negotiation Services</h4>
+                  </div>
+                  <p className="text-gray-600 mb-3">Fair value assessment and intrinsic value derivation considering qualitative features.</p>
+                  <ul className="space-y-1 text-sm text-gray-600">
+                    <li>• Market research and demand-supply analysis</li>
+                    <li>• Professional negotiation on your behalf</li>
+                    <li>• Better price discovery through expert guidance</li>
                   </ul>
                 </div>
                 
                 <div className="bg-white p-6 rounded-xl shadow-sm border border-orange-100">
-                  <h4 className="font-semibold text-gray-900 mb-3">Transaction Management</h4>
-                  <ul className="space-y-2 text-gray-600">
-                    <li>• Agreement drafting and review</li>
-                    <li>• Registration process management</li>
-                    <li>• Loan facilitation and documentation</li>
-                    <li>• Possession and handover coordination</li>
+                  <div className="flex items-center gap-3 mb-3">
+                    <Building className="w-5 h-5 text-blue-600" />
+                    <h4 className="font-semibold text-gray-900">Real Estate and Allied Commercial Matters</h4>
+                  </div>
+                  <p className="text-gray-600 mb-3">Complete legal support for documentation and compliance requirements.</p>
+                  <ul className="space-y-1 text-sm text-gray-600">
+                    <li>• Agreements, contracts, and property rights</li>
+                    <li>• Registration and legal documentation</li>
+                    <li>• Family settlements and asset distribution</li>
                   </ul>
                 </div>
                 
                 <div className="bg-white p-6 rounded-xl shadow-sm border border-orange-100">
-                  <h4 className="font-semibold text-gray-900 mb-3">Post-Purchase Services</h4>
-                  <ul className="space-y-2 text-gray-600">
-                    <li>• Property management and maintenance</li>
-                    <li>• Rental management and tenant screening</li>
-                    <li>• Tax compliance and documentation</li>
-                    <li>• Sale assistance and capital gains planning</li>
+                  <div className="flex items-center gap-3 mb-3">
+                    <Shield className="w-5 h-5 text-green-600" />
+                    <h4 className="font-semibold text-gray-900">Service Coverage</h4>
+                  </div>
+                  <p className="text-gray-600 mb-3">Currently serving Delhi/NCR, Navi Mumbai, Bangalore, Chandigarh, and Jaipur.</p>
+                  <ul className="space-y-1 text-sm text-gray-600">
+                    <li>• Expanding to other geographies based on demand</li>
+                    <li>• Local expertise in each market</li>
+                    <li>• End-to-end transaction support</li>
                   </ul>
                 </div>
               </div>
@@ -313,8 +334,8 @@ const ServicesPage = () => {
                 className="rounded-2xl shadow-2xl w-full h-[500px] object-cover"
               />
               <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-lg">
-                <div className="text-2xl font-bold text-orange-600">₹50Cr+</div>
-                <div className="text-sm text-gray-600">Transactions</div>
+                <div className="text-2xl font-bold text-orange-600">5+</div>
+                <div className="text-sm text-gray-600">Cities Covered</div>
               </div>
             </div>
           </div>
@@ -333,44 +354,53 @@ const ServicesPage = () => {
               />
               <div className="absolute -bottom-6 -right-6 bg-white p-4 rounded-xl shadow-lg">
                 <div className="text-2xl font-bold text-purple-600">24/7</div>
-                <div className="text-sm text-gray-600">Support</div>
+                <div className="text-sm text-gray-600">Global Support</div>
               </div>
             </div>
             
             <div className="order-1 lg:order-2">
               <h2 className="text-4xl font-bold text-gray-900 mb-6">Cross-Border Transactions</h2>
               <p className="text-lg text-gray-600 mb-8">
-                Seamless international money transfers and regulatory compliance for all your cross-border financial needs with complete transparency and security.
+                In today's interconnected world, moving funds across borders requires precision, compliance, and trusted expertise. We specialize in cross-border banking transactions, RBI-compliant certifications, and tax compliances.
               </p>
               
               <div className="space-y-6">
                 <div className="bg-gradient-to-r from-purple-50 to-white p-6 rounded-xl border border-purple-100">
-                  <h4 className="font-semibold text-gray-900 mb-3">Money Transfer Services</h4>
-                  <ul className="space-y-2 text-gray-600">
-                    <li>• NRE/NRO account transfers</li>
-                    <li>• Property purchase remittances</li>
-                    <li>• Investment fund transfers</li>
-                    <li>• Repatriation of sale proceeds</li>
+                  <div className="flex items-center gap-3 mb-3">
+                    <Globe className="w-5 h-5 text-purple-600" />
+                    <h4 className="font-semibold text-gray-900">Cross-Border Banking Transactions</h4>
+                  </div>
+                  <p className="text-gray-600 mb-3">Guidance and execution for international fund transfers in compliance with RBI & FEMA regulations.</p>
+                  <ul className="space-y-1 text-sm text-gray-600">
+                    <li>• Inward and outward remittances</li>
+                    <li>• Foreign currency account management</li>
+                    <li>• Optimal fund transfer routes for cost-effectiveness</li>
                   </ul>
                 </div>
                 
                 <div className="bg-gradient-to-r from-purple-50 to-white p-6 rounded-xl border border-purple-100">
-                  <h4 className="font-semibold text-gray-900 mb-3">Regulatory Compliance</h4>
-                  <ul className="space-y-2 text-gray-600">
-                    <li>• FEMA compliance and documentation</li>
-                    <li>• RBI reporting and approvals</li>
-                    <li>• Foreign exchange regulations</li>
-                    <li>• LRS (Liberalized Remittance Scheme) guidance</li>
+                  <div className="flex items-center gap-3 mb-3">
+                    <FileText className="w-5 h-5 text-blue-600" />
+                    <h4 className="font-semibold text-gray-900">Remittance Certifications</h4>
+                  </div>
+                  <p className="text-gray-600 mb-3">Statutory certifications required for international fund transfers.</p>
+                  <ul className="space-y-1 text-sm text-gray-600">
+                    <li>• Form 15CA & 15CB issuance</li>
+                    <li>• Certification for repatriation of sale proceeds</li>
+                    <li>• Bank liaison for smooth processing</li>
                   </ul>
                 </div>
                 
                 <div className="bg-gradient-to-r from-purple-50 to-white p-6 rounded-xl border border-purple-100">
-                  <h4 className="font-semibold text-gray-900 mb-3">Documentation & Certification</h4>
-                  <ul className="space-y-2 text-gray-600">
-                    <li>• Remittance certificates</li>
-                    <li>• CA certificates for property transactions</li>
+                  <div className="flex items-center gap-3 mb-3">
+                    <Home className="w-5 h-5 text-green-600" />
+                    <h4 className="font-semibold text-gray-900">Real Estate Transaction Compliance</h4>
+                  </div>
+                  <p className="text-gray-600 mb-3">End-to-end assistance in tax compliance for property transactions across borders.</p>
+                  <ul className="space-y-1 text-sm text-gray-600">
+                    <li>• Capital gains tax computation</li>
+                    <li>• TDS compliance for NRI/foreign sellers</li>
                     <li>• Tax clearance certificates</li>
-                    <li>• FIRC (Foreign Inward Remittance Certificate)</li>
                   </ul>
                 </div>
               </div>
