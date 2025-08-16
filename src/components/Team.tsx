@@ -48,7 +48,7 @@ const Team = () => {
       position: "Senior Associate",
       experience: "Professional Practice: 15 Years",
       specialization: "Real Estate & Liaisoning",
-      image: "/assets/amresh.jpeg", // Replace with actual image path or URL
+      image: "/assets/amresh.jpeg", 
       credentials: "M.A, MBA",
       description:
         "Expert in cross-industry expertise from startups, government, manufacturing, and global IT, excelling in operations, cost optimization, and quality management. Skilled in HR, finance, and strategic partnerships, I streamline processes, mitigate risks, and guide emerging enterprises in building robust, future-ready foundations.",
@@ -58,7 +58,7 @@ const Team = () => {
       position: "Associate",
       experience: "Professional Practice: 3 Years",
       specialization: "Documentation, Title Search & Certifications",
-      image: "/assets/vedant.jpg",
+      image: "/assets/vedant.jpg", 
       credentials: "LLB, MBA",
       description:
         "Legal consultant with LL.B and 3 years’ experience in legal compliances, specializing in property title searches. MBA Finance graduate skilled in analyzing financial and legal aspects to ensure clear property titles and regulatory adherence. Committed to delivering accurate due diligence and risk mitigation for seamless real estate and business transactions.",
