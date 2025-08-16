@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Menu, X, Phone, Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,26 +34,22 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="bg-gradient-to-b from-orange-400 to-green-600 text-white px-3 py-2 rounded-lg font-bold text-xl">
-              NRI
-            </div>
-            <span className="ml-2 text-xl font-bold text-gray-800">Consultants</span>
+            <Link to="/" className="flex items-center cursor-pointer">
+              <div className="bg-gradient-to-b from-orange-400 to-green-600 text-white px-3 py-2 rounded-lg font-bold text-xl">
+                NRI
+              </div>
+              <span className="ml-2 text-xl font-bold text-gray-800">Consultants</span>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
             <button
-              onClick={() => scrollToSection("home")}
+              onClick={() => (window.location.href = "/")}
               className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
             >
               Home
             </button>
-            {/* <button
-              onClick={() => scrollToSection("services")}
-              className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
-            >
-              Services
-            </button> */}
             <button
               onClick={() => (window.location.href = "/services")}
               className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
@@ -60,22 +57,22 @@ const Header = () => {
               Services
             </button>
             <button
-              onClick={() => scrollToSection("team")}
+              onClick={() => (window.location.href = "/aboutus")}
               className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
             >
-              Our Team
+              About Us
             </button>
             <button
-              onClick={() => scrollToSection("blog")}
+              onClick={() => (window.location.href = "/#blog")}
               className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
             >
               Blog
             </button>
             <button
-              onClick={() => scrollToSection("contact")}
+              onClick={() => (window.location.href = "/contactus")}
               className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
             >
-              Contact
+              Contact Us
             </button>
           </nav>
 
@@ -103,7 +100,7 @@ const Header = () => {
           <div className="lg:hidden py-4 border-t border-gray-200">
             <nav className="flex flex-col space-y-4">
               <button
-                onClick={() => scrollToSection("home")}
+                onClick={() => (window.location.href = "/")}
                 className="text-left text-gray-700 hover:text-blue-600 font-medium transition-colors"
               >
                 Home

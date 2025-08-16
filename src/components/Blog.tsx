@@ -63,7 +63,7 @@ const Blog = () => {
         "Navigate the complexities of property purchase in India with our comprehensive guide covering legal requirements, financing options, and tax implications for NRIs.",
       image:
         "https://images.pexels.com/photos/280229/pexels-photo-280229.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&dpr=1",
-      author: "Amit Kumar",
+      // author: "Amit Kumar",
       date: "January 10, 2025",
       readTime: "12 min read",
       category: "Real Estate",
@@ -152,7 +152,7 @@ const Blog = () => {
         "Comprehensive overview of NRI taxation in India, covering residential status, tax obligations, exemptions, and strategies for tax optimization in 2025.",
       image:
         "https://images.pexels.com/photos/6863183/pexels-photo-6863183.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&dpr=1",
-      author: "Rajesh Sharma",
+      // author: "Rajesh Sharma",
       date: "January 8, 2025",
       readTime: "15 min read",
       category: "Taxation",
@@ -264,15 +264,15 @@ const Blog = () => {
       `,
     },
     {
-      title: "Due Diligence Checklist for NRIs Investing in Indian Businesses",
+      title: "Updates for NRIs Investing in Indian Businesses",
       excerpt:
         "Essential due diligence steps for NRIs looking to invest in Indian businesses, including legal, financial, and operational aspects to ensure secure investments.",
       image:
         "https://images.pexels.com/photos/3184431/pexels-photo-3184431.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&dpr=1",
-      author: "Deepika Singh",
+      // author: "Deepika Singh",
       date: "January 5, 2025",
       readTime: "10 min read",
-      category: "Due Diligence",
+      category: "Latest Updates",
       tags: ["Business Investment", "Risk Assessment", "Legal Compliance"],
       content: `
         <h3>Introduction</h3>
@@ -483,7 +483,7 @@ const Blog = () => {
                   <div className="flex items-center gap-4 text-xs text-gray-500 mb-3">
                     <div className="flex items-center gap-1">
                       <User className="w-3 h-3" />
-                      <span>{post.author}</span>
+                      {/* <span>{post.author}</span> */}
                     </div>
                     <div className="flex items-center gap-1">
                       <Calendar className="w-3 h-3" />
