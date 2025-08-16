@@ -1,5 +1,9 @@
 import React, { useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
@@ -12,13 +16,22 @@ import ServicesPage from "./pages/ServicesPage";
 import AboutPage from "./pages/AboutUsPage";
 import ContactPage from "./components/Contact";
 
+function Layout({ children }) {
+  return (
+    <div className="min-h-screen bg-white">
+      <Header />
+      {children}
+      <Footer />
+    </div>
+  );
+}
+
 function App() {
   useEffect(() => {
-    // Update page title
+    // ---- SEO Meta Setup ----
     document.title =
       "NRIConsultants - Expert NRI Financial Services in India | Investment Advisory & Tax Consulting";
 
-    // Add meta description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute(
@@ -33,31 +46,27 @@ function App() {
       document.head.appendChild(meta);
     }
 
-    // Add meta keywords
+    // meta keywords
     const metaKeywords = document.createElement("meta");
     metaKeywords.name = "keywords";
     metaKeywords.content =
       "NRI Financial Services India, NRI Real Estate Transactions, Cross Border NRI Consultancy, NRI Mutual Fund Investment Advice, NRI taxation India, FEMA compliance, RBI regulations, NRI tax planning, NRI property purchase";
     document.head.appendChild(metaKeywords);
 
-    // Add Open Graph tags
-    const ogTitle = document.createElement("meta");
-    ogTitle.setAttribute("property", "og:title");
-    ogTitle.content = "NRIConsultants - Expert NRI Financial Services in India";
-    document.head.appendChild(ogTitle);
+    // Open Graph tags
+    const ogTags = [
+      { property: "og:title", content: "NRIConsultants - Expert NRI Financial Services in India" },
+      { property: "og:description", content: "Comprehensive NRI financial services including mutual funds, tax planning, real estate transactions, and cross-border compliance. Expert guidance with FEMA & RBI regulations." },
+      { property: "og:type", content: "website" },
+    ];
+    ogTags.forEach(tag => {
+      const el = document.createElement("meta");
+      el.setAttribute("property", tag.property);
+      el.content = tag.content;
+      document.head.appendChild(el);
+    });
 
-    const ogDescription = document.createElement("meta");
-    ogDescription.setAttribute("property", "og:description");
-    ogDescription.content =
-      "Comprehensive NRI financial services including mutual funds, tax planning, real estate transactions, and cross-border compliance. Expert guidance with FEMA & RBI regulations.";
-    document.head.appendChild(ogDescription);
-
-    const ogType = document.createElement("meta");
-    ogType.setAttribute("property", "og:type");
-    ogType.content = "website";
-    document.head.appendChild(ogType);
-
-    // Add structured data for SEO
+    // structured data
     const structuredData = {
       "@context": "https://schema.org",
       "@type": "FinancialService",
@@ -86,48 +95,6 @@ function App() {
         "Cross-Border Transactions",
       ],
       areaServed: "Worldwide",
-      hasOfferCatalog: {
-        "@type": "OfferCatalog",
-        name: "NRI Financial Services",
-        itemListElement: [
-          {
-            "@type": "Offer",
-            itemOffered: {
-              "@type": "Service",
-              name: "Personal Finance Services - Mutual Funds",
-              description:
-                "Expert mutual fund investment solutions with personalized recommendations and secure NSE platform",
-            },
-          },
-          {
-            "@type": "Offer",
-            itemOffered: {
-              "@type": "Service",
-              name: "Income Tax Services",
-              description:
-                "Comprehensive tax planning, filing, and compliance services for NRIs with FEMA guidance",
-            },
-          },
-          {
-            "@type": "Offer",
-            itemOffered: {
-              "@type": "Service",
-              name: "Real Estate Services",
-              description:
-                "Complete property transaction support including negotiation, documentation, and legal compliance",
-            },
-          },
-          {
-            "@type": "Offer",
-            itemOffered: {
-              "@type": "Service",
-              name: "Cross-Border Transactions",
-              description:
-                "Expert solutions for international remittances, certifications, and regulatory compliance",
-            },
-          },
-        ],
-      },
     };
 
     const script = document.createElement("script");
@@ -135,36 +102,54 @@ function App() {
     script.textContent = JSON.stringify(structuredData);
     document.head.appendChild(script);
 
-    // Add smooth scrolling behavior
+    // smooth scrolling
     document.documentElement.style.scrollBehavior = "smooth";
   }, []);
 
-  return (
-    <Router>
-      <div className="min-h-screen bg-white">
-        <Header />
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <main>
-                <Hero />
-                <Services />
-                <WhyChooseUs />
-                <Team />
-                <Blog />
-                <Contact />
-              </main>
-            }
-          />
-          <Route path="/services" element={<ServicesPage />} />
-          <Route path="/aboutus" element={<AboutPage />} />
-          <Route path="/contactus" element={<ContactPage />} />
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
-  );
+  // ---- Router setup with createBrowserRouter ----
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: (
+        <Layout>
+          <main>
+            <Hero />
+            <Services />
+            <WhyChooseUs />
+            <Team />
+            <Blog />
+            <Contact />
+          </main>
+        </Layout>
+      ),
+    },
+    {
+      path: "/services",
+      element: (
+        <Layout>
+          <ServicesPage />
+        </Layout>
+      ),
+    },
+    {
+      path: "/aboutus",
+      element: (
+        <Layout>
+          <AboutPage />
+        </Layout>
+      ),
+    },
+    {
+      path: "/contactus",
+      element: (
+        <Layout>
+          <ContactPage />
+        </Layout>
+      ),
+    },
+  ]);
+
+  return <RouterProvider router={router} />;
 }
 
 export default App;
