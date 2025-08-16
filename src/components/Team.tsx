@@ -48,7 +48,7 @@ const Team = () => {
       position: "Senior Associate",
       experience: "Professional Practice: 15 Years",
       specialization: "Real Estate & Liaisoning",
-      image: "/assets/amreshUpdated.jpeg", // Replace with actual image path or URL
+      image: "/assets/amreshUpdated.jpeg",
       credentials: "M.A, MBA",
       description:
         "Expert in cross-industry expertise from startups, government, manufacturing, and global IT, excelling in operations, cost optimization, and quality management. Skilled in HR, finance, and strategic partnerships, I streamline processes, mitigate risks, and guide emerging enterprises in building robust, future-ready foundations.",
