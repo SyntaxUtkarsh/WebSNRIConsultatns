@@ -216,7 +216,7 @@ const ServicesPage = () => {
                 <div className="bg-white p-6 rounded-xl shadow-sm border border-blue-100">
                   <div className="flex items-center gap-3 mb-3">
                     <Shield className="w-5 h-5 text-green-600" />
-                    <h4 className="font-semibold text-gray-900">Secure Transactions</h4>
+                    <h4 className="font-semibold text-gray-900">Secured Transactions</h4>
                   </div>
                   <p className="text-gray-600 mb-3">
                     Online platform powered by National Stock Exchange (NSE) - highly secure and
@@ -506,7 +506,7 @@ const ServicesPage = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
               Why Choose{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-green-600">
-                NRIConsultants
+                NRI Consultants
               </span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
