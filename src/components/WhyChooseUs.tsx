@@ -40,12 +40,12 @@ const WhyChooseUs = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Why Choose{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-green-600">
-              NRIConsultants
+              NRI Consultants
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             We understand the unique challenges NRIs face when managing finances and investments in
-            India. Our expertise ensures you make informed decisions with complete peace of mind.
+            India. With our expertise, NRIs make informed decisions and get complete peace of mind.
           </p>
         </div>
 

@@ -32,7 +32,7 @@ const Hero = () => {
               <p className="text-xl text-gray-600 leading-relaxed">
                 Life becomes much easier and harmonious when a correct and timely advice is received
                 from trustworthy friends or professionals. We are one-stop solution for all your
-                India-based investments and transactions. Financial consulting, due diligence,
+                India-based investments and transactions, which covers financial consulting, due diligence,
                 investment advisory, and real estate services.
               </p>
             </div>
